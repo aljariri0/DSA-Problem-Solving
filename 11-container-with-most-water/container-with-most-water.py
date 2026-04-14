@@ -5,8 +5,8 @@ class Solution:
         mAmount = float("-inf") 
 
 
-        for i in range(len(height)):
-
+        while l < r:
+            
             area = (r - l) * min(height[l], height[r])
             mAmount = max(mAmount, area)
 
